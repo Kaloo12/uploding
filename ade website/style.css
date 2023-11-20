@@ -1,0 +1,277 @@
+*{
+  margin: 0;
+  padding: 0;
+text-decoration:none;
+list-style:none;
+box-sizing:border-box;
+}
+
+body {
+  background: linear-gradient(white,gray);
+  font-family: Verdana, sans-serif; margin:0
+}
+nav{
+  background:#0082e6;       
+  height:80px;
+  width: 100%;
+}
+
+
+nav ul{
+  float: right;
+  margin-right:20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px; 
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+  
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height:80px; 
+  margin-right:40px;
+  cursor: pointer;
+  display:none;
+
+}
+#check{
+  display:none;
+}
+@media(max-width:952px){
+  label.logo{
+    font-size: 30px;
+    padding-left:50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+.logo{
+  width: 30%;
+  height: 80px; 
+  padding-left: 10px;
+}
+.mySlides {
+  display: none
+}
+
+img {
+ padding-top: 5px;
+ padding-bottom: 5px;
+  vertical-align: middle;
+  width:100%;
+  height:75%;
+  border-radius: 10px;
+}
+/* Slideshow container */
+.slideshow-container {
+max-width: 80%;
+position: relative;
+margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 38px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #d4cece;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+background-color: #6b2e2e;
+}
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+.dot{
+height: 10px;
+width: 10px;
+}
+@media only screen and (max-width: 500px) {
+.prev, .next,.text {font-size: 14px}
+}
+}
+.aboutimage{
+
+  max-width: 550px;
+  height:310px;
+  float: left;
+  border-radius: 10px;
+  margin-right: 15px;
+  
+}
+.wrapper{
+  margin: 150px auto;
+  width: 70%;
+}
+.text-box{
+  color:white;
+}
+.text-box h2 {
+  font-size: 42px;
+}
+.text-box p{
+  font-size: 16px;
+}
+.contact{
+  color: white;
+  margin-top: 35px;
+}
+h1 {
+  color:white;
+  text-decoration: underline;
+}
+p{color: black;}
+.wall{
+  margin:20px;
+  justify-content: center;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(202, 196, 196);
+}
+html {
+  scroll-behavior: smooth;
+ }
+.contimg{
+  width:30px;
+  height:85px;
+  display: inline-block;
+}
+.container{
+  width:80%;
+  margin:50px auto;
+}
+.contact-box{
+  background: #fff;
+  display: flex;
+}
+.contact-left{
+  flex-basis: 60%;
+  padding:40px 60px;
+}
+.contact-right{
+  flex-basis:40%;
+  padding:40px;
+  background:#1c00b5;
+  color:#fff;
+}
+.container p{
+  margin-bottom: 40px;
+}
+.input-row{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.input-row .input-group{
+  flex-basis: 45%;
+}
+input{
+  width:100%;
+  border:none;
+  border-bottom: 1px solid #ccc;
+  outline:none;
+  padding-bottom: 5px;
+}
+textarea{
+width: 100%;
+border: 1px solid #ccc;
+outline: none;
+padding:1px;
+box-sizing: border-box;
+}
+label{
+  margin-bottom: 6px;
+  display:bloxk;
+}
+button{
+  background: #1c00b5;
+  width: 100px;
+  border: none;
+  outline: none;
+  color:#FFF;
+  height:35px;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 0px rgba(28,0,181,0.3);
+
+}
+tr td:first-child{
+  padding-right: 20px;
+}
